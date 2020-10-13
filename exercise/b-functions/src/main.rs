@@ -25,7 +25,7 @@ fn main() {
     //
     // If you get stuck, remember that this is *very* similar to what `area_of` does.
     //
-    //println!("Volume is {}", volume(width, height, depth));
+    println!("Volume is {}", volume(width, height, depth));
 }
 
 fn area_of(x: i32, y: i32) -> i32 {
@@ -37,4 +37,8 @@ fn area_of(x: i32, y: i32) -> i32 {
     //            Run `cargo clippy`, figure out what's wrong, and fix it.  Once it is fixed,
     //            `cargo clippy` won't return areas, and `cargo run` will still produce the same
     //            output. See also https://github.com/rust-lang/rust-clippy
+}
+
+fn volume(x: i32, y: i32, z: i32) -> i32 {
+    x * y * z
 }
